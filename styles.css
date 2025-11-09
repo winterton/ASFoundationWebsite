@@ -1,6 +1,11 @@
-body, html {
-  background-color: white;
+html {
+  background-color: beige;
   margin: 0;
+}
+
+body {
+  margin: 0;
+  background-color: white;
 }
 
 header {
