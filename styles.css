@@ -1,23 +1,31 @@
-html {
-  background-color: #E0DCD3;
-  margin: 0;
+:root {
+  --bg: #F8F4EC; //light beige
+  --text: #1A1A1A;
+  --muted: #555555;
+  --brand: #375A49; //dark green
+  --brand-light: #9BBFA3; //lighter green
+  --brand-hover: #4E8071; //green hover
+  --border: #E0DCD3; //dark beige
+  --surface: #FCFAF7; //buttons
 }
 
-body {
+html, body {
+  background-color: var(--bg);
   margin: 0;
-  background-color: #F8F4EC;
 }
 
 header {
-  border-bottom: 1px solid black; 
-  background-color: #E0DCD3;
   padding: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  border-bottom: 2px solid #E0DCD3; 
+  width: 95%;
+  margin: 0 auto;
+  position: sticky;
+  top:0;
+  background: var(--bg);
 }
 
 main {
-  background-color: #F8F4EC;
   width: 100%;
   color: #1A1A1A;
 }
@@ -30,12 +38,7 @@ section {
 
 h1, h2 {
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-}
-
-footer {
-  padding: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
 }
 
 .header-inner {
@@ -45,6 +48,11 @@ footer {
   padding: .75rem 0;
 }
 
+.logo-img {
+	width: 40px;
+	height: 40px;
+}
+
 .brand-text {
   color: navy;
   font-size: 16pt;
@@ -52,7 +60,6 @@ footer {
 }
 
 .navbar {
-  background-color: #E0DCD3;
   padding: 0.75rem 1.5rem;
 }
 
@@ -70,24 +77,30 @@ footer {
 
 .nav-list a {
   text-decoration: none;
-  color: #1A1A1A;    
+  color: #1A1A1A;
   font-weight: 500;
   transition: color 0.2s ease;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #1A1A1A;
 }
 
 
 .nav-list a:hover,
 .nav-list a:focus {
-  color: #375A49; 
+  color: #375A49;
+  border-bottom: 1px solid #375A49; 
 }
 
 footer {
-  background-color: #E0DCD3;
   color: #1A1A1A;
-  border-top: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 33px;
+  border-top: 2px solid #E0DCD3; 
+  border-left: 0;
+  border-right: 0;
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
 }
+
